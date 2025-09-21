@@ -1,28 +1,168 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-.main{
-    background-image: url("assets/Image/bg.jpg");
-    background-position: center center;
-    background-size: max(1200px, 100vw);
-    background-repeat: no-repeat;
-    height: 80vh;
-    position: relative;
-}
-.main .box{
-    height: 80vh;
-    width: 100%;
-    opacity: 0.44;
-    position: absolute;
-    top: 0;
-    background-color: black;
-}
-nav{
-    max-width: 80vw;
-    justify-content: space-between;
-    margin: auto;
-    display: flex;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Michroma&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("assets/Images/bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  max-width: 80vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+nav img {
+  color: rgb(255, 0, 0);
+  width: 120px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Michroma", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+.hero > :first-child {
+  font-weight: bolder;
+  font-size: 38px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.separation {
+  height: 11px;
+  background-color: gray;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.2);
+  border-radius: 4px;
+  border: 1px solid rgba(221, 228, 230, 0.6);
+  cursor: pointer;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+.main input {
+  padding: 14px 101px 8px 14px;
+  font-weight: 900px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: azure;
+  background-color: rgba(23, 23, 23, 0.2);
+  border: 1px solid rgba(221, 228, 230, 0.6);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  padding: 100px;
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 64px;
+  left: 55px;
+  width: 21vw;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+}
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.first > div :nth-child(2) {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+.faq h2 {
+  text-align: center;
+  padding: 34px;
+  font-size: 48px;
+}
+.faqbox:hover {
+  background-color: rgb(147, 11, 11);
+  color: white;
+}
+
+.faqbox {
+  color: white;
+  transition: all 0.9s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(32, 30, 30);
+  padding: 24px;
+  max-width: 60vw; 
+  margin: 14px auto;
+  cursor: pointer;
 }
